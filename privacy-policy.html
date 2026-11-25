@@ -66,27 +66,36 @@
 </head>
 <body>
   <div class="container">
-    <div class="badge">100% Offline &amp; On-Device Processing</div>
+    <div class="badge">On-Device ID Card Processing</div>
     <h1>Privacy Policy</h1>
     <div class="meta">
       <strong>App:</strong> ID Card Print, Scan &amp; PDF (<code>com.thebestdeveloper.idcardprint</code>)<br />
       <strong>Developer:</strong> The Best Developer<br />
-      <strong>Last updated:</strong> November 24, 2026
+      <strong>Last updated:</strong> November 25, 2026
     </div>
 
     <p>
-      <strong>ID Card Print, Scan &amp; PDF</strong> is designed with your privacy first.
-      The app operates <strong>completely offline</strong> on your device. We do not collect,
-      transmit, store, sell, or share any personal information, scanned ID card images, or PDFs
-      on any external server.
+      <strong>ID Card Print, Scan &amp; PDF</strong> is built with your privacy first.
+      All ID card scanning, cropping, enhancement, PDF generation, and saved document storage
+      happen <strong>100% locally on your device</strong>. We never upload, view, collect, sell,
+      or share your scanned ID cards or PDFs.
     </p>
 
-    <h2>1. Information We Collect</h2>
-    <p>
-      <strong>None.</strong> We do not collect personal data, analytics, usage telemetry,
-      advertising identifiers, location data, or crash reports containing user documents.
-      All scanning, cropping, enhancement, and PDF generation happen locally on your device.
-    </p>
+    <h2>1. Information We Collect &amp; Push Notifications</h2>
+    <ul>
+      <li>
+        <strong>Scanned Images &amp; PDFs:</strong> Never collected or transmitted. All documents
+        stay strictly inside your device's private local storage.
+      </li>
+      <li>
+        <strong>Firebase Cloud Messaging (Push Notifications):</strong> We use Google Firebase
+        Cloud Messaging (FCM) solely to deliver optional app update alerts and reminders to open
+        the app. For this purpose, Firebase generates an anonymous app-instance notification token
+        (a device/app identifier) encrypted in transit to route notifications to your device. No
+        personal identity, account info, or scanned images are ever linked to this token. You can
+        disable notifications at any time in your Android device settings.
+      </li>
+    </ul>
 
     <h2>2. Permissions Used</h2>
     <ul>
@@ -95,6 +104,11 @@
         Used solely to capture images of ID cards and documents when you initiate a scan.
         Camera frames are processed locally on-device for real-time edge detection and are never
         uploaded anywhere.
+      </li>
+      <li>
+        <strong>Notifications (<code>android.permission.POST_NOTIFICATIONS</code>):</strong>
+        Optional permission on Android 13+ used to display push notifications sent via Firebase
+        Cloud Messaging.
       </li>
       <li>
         <strong>Gallery / Photo Picker:</strong>
@@ -109,19 +123,20 @@
       stored strictly inside the app's private local storage on your device. You can view,
       rename, print, share (only when you explicitly tap Share), or permanently delete any
       saved file inside the app at any time. Uninstalling the app removes all locally stored
-      app data.
+      app data and invalidates the Firebase notification token.
     </p>
 
     <h2>4. Third-Party Services &amp; Data Sharing</h2>
     <p>
-      This app contains <strong>no third-party advertising SDKs, no analytics trackers, and no
-      cloud sync services</strong>. Files leave your device only when you explicitly choose to
-      print or share a PDF using your device's system Print or Share menu.
+      This app contains <strong>no advertising SDKs and no user accounts</strong>. We use
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase Cloud Messaging</a>
+      only for delivering push notifications. Files leave your device only when you explicitly
+      choose to print or share a PDF using your device's system Print or Share menu.
     </p>
 
     <h2>5. Children's Privacy</h2>
     <p>
-      Because we do not collect any personal data from anyone, we do not knowingly collect
+      This app is intended for general audiences aged 18 and over and does not knowingly collect
       personal information from children under 13 (or the applicable age in your jurisdiction).
     </p>
 
@@ -134,7 +149,7 @@
     <h2>7. Contact Us</h2>
     <p>
       If you have any questions regarding this Privacy Policy, please contact the developer at:
-      <a href="https://github.com/malikit786/myidscan2">github.com/malikit786/myidscan2</a>.
+      <a href="mailto:malikmj006@gmail.com">malikmj006@gmail.com</a>.
     </p>
   </div>
 </body>
